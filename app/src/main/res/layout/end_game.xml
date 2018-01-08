@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/SCORE"
+            android:text="SCORE : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="Replay"
+            android:id="@+id/REPLAY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="replay"/>
+
+        <Button
+            android:text="End"
+            android:id="@+id/END"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="replay"/>
+    </LinearLayout>
+
+</RelativeLayout>

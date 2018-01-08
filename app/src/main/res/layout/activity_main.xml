@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.herizo.clickgame.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/TIME"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/SCORE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Score : 0" />
+
+            <TextView
+                android:id="@+id/NUMBER"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Next Number :" />
+
+        </LinearLayout>
+
+
+            <GridLayout
+                android:id="@+id/BUTTONS_GRID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:layout_weight="1"
+                >
+                    <Button
+                        android:id="@+id/SEVEN"
+                        android:onClick="choseNumber"
+                        android:text="7" />
+
+                    <Button
+                        android:id="@+id/EIGHT"
+                        android:onClick="choseNumber"
+                        android:text="8" />
+
+                    <Button
+                        android:id="@+id/NINE"
+                        android:onClick="choseNumber"
+                        android:text="9" />
+
+                    <Button
+                        android:id="@+id/FOUR"
+                        android:onClick="choseNumber"
+                        android:text="4" />
+
+                    <Button
+                        android:id="@+id/FIVE"
+                        android:onClick="choseNumber"
+                        android:text="5" />
+
+                    <Button
+                        android:id="@+id/SIX"
+                        android:onClick="choseNumber"
+                        android:text="6" />
+
+                    <Button
+                        android:id="@+id/ONE"
+                        android:onClick="choseNumber"
+                        android:text="1" />
+
+                    <Button
+                        android:id="@+id/TWO"
+                        android:onClick="choseNumber"
+                        android:text="2" />
+
+                    <Button
+                        android:id="@+id/THREE"
+                        android:onClick="choseNumber"
+                        android:text="3" />
+
+                    <Button
+                        android:id="@+id/ZERO"
+                        android:layout_column="1"
+                        android:onClick="choseNumber"
+                        android:text="0" />
+            </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
